@@ -1,6 +1,15 @@
 
 # ASCII-ART-WEB
 
+It's a web server for outputting the text in a graphic representation of ASCII and dowloading a file with it.
+
+Ascii-art-web consists in creating and running a server, in which it will be possible to use a web GUI (graphical user interface) version of a program that outputs text in a graphical representation of ASCII
+
+execute: go run main.go
+
+After the launch, you are given the host where the project is located.
+
+Go to http://localhost:8080 /'
 
 # Authors
 @Abdolla && @Bagdaulet02
