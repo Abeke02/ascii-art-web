@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная страница</title>
+    <link href="static/style.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
+  >
+
+  </head>
+  <body>
+    <div class="d-flex h-100 text-center text-white bg-dark">
+      <div class="cover-container d-flex w-500 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+          <div>
+            <h3 class="float-md-start mb-0" style="text-align: center;">Ascii-art-web</h3>
+          </div>
+        </header>
+        <main class="px-3">
+          <h1 style="text-align: center;">Enter the text</h1>
+          <form method="post" action="/asciiArt">
+            <textarea name="text" cols="55" rows=""></textarea>
+            <br>
+            <br>
+            <select name="style">
+              <option value="standard">Standart</option>
+              <option value="shadow">Shadow</option>
+              <option value="thinkertoy">Thinkertoy</option>
+            <br>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+          </form>
+          <br> <br><br>
+          
+          <pre style="
+          padding: 20px;
+          overflow: auto;
+          width: 650px;
+          height: 240px;
+          background-color: #184da3;
+        ">{{ .Message}}</pre>
+        </main>
+      </div>
+    </div>
+     
+  </body>
+</html>
